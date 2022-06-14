@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial number</title>
+</head>
+<body>
+      <h1> Factorial number</h1>
+
+      <script>
+             // WAP to print the factorial of a number.
+
+            // Factorial :- 
+            // formula :-  n! = n * (n-1) * (n-2).....*1
+            // example :- 5! = 5 * 4 * 3 * 2 * 1;
+
+            //  Two thing to remember when using factorial - 
+            // 1 . run a loop which runs from 1 to the given number.
+            // 2. keep on increasing the value the result variable.
+
+            let n = parseInt(prompt('Enter a number'));
+
+            function factorial(number){
+                let result = 1;
+                if(number <= 1){
+                    console.log('1');
+                }else{
+                    for(let i = 2; i <= n; i++){
+                      result = result * i;
+                    }
+                }
+                console.log(result);
+            }
+            factorial(n);
+      </script>
+</body>
+</html>

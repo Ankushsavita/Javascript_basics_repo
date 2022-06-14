@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops statement</title>
+</head>
+<body>
+     <h1>Loops statements</h1>
+
+     <script>
+
+    //for loops_
+
+     // print first 100 numbers starting from 1.
+
+     //initialization      : let i = 1;
+     //condition           : i <= 100;
+     //increment/decrement : i++;
+
+     for(let i = 1; i<=100 ; i++){
+           console.log(i);
+     }
+
+    //print all even numbers between 1-10.
+
+    //using if/else condition
+
+    let number = 10;
+      if(number % 2 === 0){
+          console.log('even number ', number);
+      }else {
+          console.log('odd number');
+      }
+
+    //using for_loops
+
+    // 1st approach
+
+      let i = 1;
+      for(let i=1; i<=10; i++){
+        if(i % 2=== 0){
+            console.log(i);
+        }
+    }
+
+    // 2nd approach
+
+     let j = 2;
+     for(let j=2; j<=10 ; j+=2){
+         console.log(j);
+     }                             //2nd approch better than 1st.
+
+    // while_loops
+
+    // print first 10 numbers starting from 1.
+
+    let a = 1;      //initialize expression
+    while(a<=10){   //condiiton
+        console.log(a);//loop body
+        a++;        //update expression: increment
+    }
+
+    //print all even numbers between 1-10.
+
+    let b = 2;
+    while(b<=10){
+        console.log(b);
+        b+=2;
+    }
+
+    // do_while_loops
+
+    //print 5 numbers starting from 1-5.
+
+    let c = 1;
+    do {
+        console.log(c);
+        c++;
+    }while (c<=5);
+    
+
+     </script>
+</body>
+</html>

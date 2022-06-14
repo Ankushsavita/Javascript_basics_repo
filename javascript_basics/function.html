@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+     <h1>Functions</h1>
+
+     <script>
+         //function: are used to when you need to perform some similar actions in many places inside your script.
+         
+         //syntax:
+                 // function function_name(){
+                    //code to be evaluated
+                  // }
+                          //function_name();
+
+        //function without parameters:
+
+        function cancelpayment(){
+            confirm('Do you really want to cancel the payment?');
+        }
+         cancelpayment();
+
+        //function using parameters:-
+
+        //function with parameters
+
+        function printname(name){
+             console.log(`my name is ${name}`);
+         }
+         printname('Ankush Savita');
+
+         // Print the sum of two numbers.
+
+         let sum = 0;
+           function sumofTwoNumbers(num1,num2){
+               sum = num1 + num2;
+               console.log(sum);
+           }
+           sumofTwoNumbers(4,5);
+
+        //print the some of three numbers.
+
+        let sum;
+          function sumofThreeNumbers(num1,num2,num3){
+              sum = num1 + num2 + num3;
+              console.log(sum);
+          }
+           sumofThreeNumbers(3,4,7);
+
+        //print the some of three numbers.
+        let sum;
+             function sumofThreeNumbers(num1,num2,num3 = 3){
+             sum = num1 + num2 + num3;// 3 + 4 + undefined
+             console.log(sum);
+           }
+           sumofThreeNumbers(3,4);  // it gives, NaN : Not a number.
+
+        //print the sum of three numbers using prompt.
+
+        let num1 = prompt('num1');// prompt is used to return the string value.
+        let num2 = prompt('num2');// '2'+'4'+'4' => '234'
+        let num3 = prompt('num3');
+
+        function sumofThreeNumbers(num1,num2,num3){
+            sum = num1 + num2 + num3;
+            console.log(sum);
+        }
+        sumofThreeNumbers(num1,num2,num3);
+
+         //print the sum of three numbers using parseInt
+
+         let num1  = parseInt(prompt('num1'));//parseInt is used to convert string type to number type(integer).
+         let num2  = parseInt(prompt('num2'));// '2' + '4' +'4' => 2 + 4 + 4 => 10
+         let num3  = parseInt(prompt('num3'));
+
+         function sumofThreeNumbers(num1,num2,num3){
+             let sum = 0;
+            sum = num1 + num2 + num3;
+            console.log(sum);
+        }
+        sumofThreeNumbers(num1,num2,num3);
+
+        //parseInt checks the value inside the strings
+        // if it finds a number inside the string, it prints the first number
+        // parseint ignores indentations, whitespace.
+
+
+         
+
+        
+
+         
+
+
+     </script>
+
+</body>
+</html>

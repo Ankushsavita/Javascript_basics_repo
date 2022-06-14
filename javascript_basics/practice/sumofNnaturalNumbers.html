@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of N natural numbers</title>
+</head>
+<body>
+    <h1>Sum of n Natural numbers</h1>
+
+    <script>
+             // WAP to print sum of first 10 natural numbers.
+
+             function sumoffirst10numbers(){
+                 let sum = 0;
+                 for(let i = 1; i <= 10; i++){
+                     sum = sum + i;
+                     console.log(`sum = ${sum} + ${i}`);
+                 }
+                    console.log(sum);
+                } 
+                 sumoffirst10numbers();
+
+            // WAP to print sum of N natural numbers.
+
+             let n = parseInt(prompt('Enter a number'));
+                function sumofNnaturalnums(n){
+                    let sum = 0;
+                    for(let i = 1; i <= n; i++){
+                     sum = sum + i;
+                     }
+                console.log(sum);
+            }
+            sumofNnaturalnums(n);
+
+            // WAP to print the factorial of a number.
+
+            // Factorial :- 
+            // formula :-  n! = n * (n-1) * (n-2).....*1
+            // example :- 5! = 5 * 4 * 3 * 2 * 1;
+
+            //  Two thing to remember when using factorial - 
+            // 1 . run a loop which runs from 1 to the given number.
+            // 2. keep on increasing the value the result variable.
+
+            // let n = parseInt(prompt('Enter a number'));
+
+            // function factorial(number){
+            //     let result = 1;
+            //     if(number <= 1){
+            //         console.log('1');
+            //     }else{
+            //         for(let i = 2; i <= n; i++){
+            //           result = result * i;
+            //         }
+            //     }
+            //     console.log(result);
+            // }
+            // factorial(n);
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print N natural numbers</title>
+</head>
+<body>
+     <h1>print N natural Numbers</h1>
+
+     <script>
+                //WAP to print first 10 natural numbers.
+
+                //using for loops:-
+                // initialization, condition, updateexpression
+
+                let i= 1;
+                  for(let i = 1; i <=10; i++){
+                       console.log(i);
+                   }
+
+                //WAP to print a function which in return prints first 10 natural numbers.
+
+                function printNaturalnumbers(){
+                     for(let i = 1; i <=10; i++){
+                       console.log(i);
+                   }
+                }
+                 printNaturalnumbers(); // using function, so its make our code reusable.
+
+                //WAP to print a function which in return prints first n natural numbers.
+
+                // using Function declaration
+
+                let n = parseInt(prompt('Enter a number')); // we are just taking user input and storing value inside n variable
+                function printNnaturalnumbers(number){
+                      for(let i = 1; i<=n; i++){
+                        console.log(i);
+                  }
+                }
+                  printNnaturalnumbers(n);// we are sending the value to n variable while passing arguments(calling a function) and value of n copied to number parameter
+
+                // using Function expression
+
+                // let n = parseInt(prompt('Enter a number')); // we are just taking user input and storing value inside n variable
+                // let printNnaturalnumbers = function (number){
+                //       for(let i = 1; i<=n; i++){
+                //         console.log(i);
+                //   }
+                // }
+                //  printNnaturalnumbers(n);
+
+                
+                
+                
+               
+
+     </script>
+</body>        
+</html>

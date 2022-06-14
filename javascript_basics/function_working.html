@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function working ?</title>
+</head>
+<body>
+     <h1>How function works?</h1>
+
+     <script>
+
+         //see how functions are working.
+
+         // print sum of two numbers.
+
+         let num1 = 1;
+         let num2 = 2;
+
+         function sumofTwoNumbers(a,b){  
+             console.log(a + b);
+         }
+         sumofTwoNumbers(num1,num2);// We are sending or copied the value of num1 into a & value of num2 into b. 
+                                    //so copy is created
+                                    //thats called ('pass by value') directly passing the values using copying.
+                                    // so a & b create our own copy so we can change the value of 'a' & 'b' easily.
+        
+        // Returning a value from functions.
+
+        // A function can return a value back into the calling code as a result(as a final answer)
+        // if a function does not return a value, it same as if it returns 'undefined'.
+
+        function sumofTwonumbersusingReturn(a,b){
+            return a + b; //  gives you back the value of a+b
+        }
+           let result = sumofTwonumbersusingReturn(5,3);
+               console.log("sum of two numbers:" , result);
+
+            function addFivetoResult(a){
+                console.log("result on adding:" , a + 5); // 8 + 5 => 13
+            }
+            addFivetoResult(result);
+
+     </script>
+</body>
+</html>

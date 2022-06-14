@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime numbers</title>
+</head>
+<body>
+     <h1> Check Prime numbers</h1>
+
+     <script>
+             // Prime numbers :- Numbers that are divisible by 1 and itself called 'prime numbers'.
+             //example:-  2,3,5,7,11,13,17,19,23,29,31,33..... etc.
+
+             // we need to take a user input.
+             // we need a function
+             // we need to run loop for ( 2 to (n-1))
+
+             // WAP to check whether a number is prime or not.
+
+             let n = parseInt(prompt('Enter a number which you want to check for:'));
+
+             function checkprime(num){
+                 // corner case
+                 // because 0 and 1 are neither prime nor not-prime.
+                 if(num <= 1){
+                     return false;
+                 }
+                 // check from 2 to (n-1)
+                 for(let i = 2; i < n; i++){
+                     if(num % i === 0){
+                         // number not prime
+                         return false;
+                     }
+                     
+                 }
+                 return true;
+             }
+               (checkprime(n)) ? console.log('true') : console.log('false');
+
+
+               // WAP to print all the prime numbers between 1-N.
+
+               // Run a loop from 1-N
+               //for every iteration let it be'i' , need to check if its prime or not.
+               // it prime, will print that number.
+
+               let n = parseInt(prompt('Enter a number till where you want to check for:'));
+
+               for(let i = 1; i <= n ; i++){
+                    // for every i, will checkprime
+                    if(checkprime(i)){
+                        console.log(i);
+                    }
+
+               }
+
+               function checkprime(num){
+                 // corner case
+                 // because 0 and 1 are neither prime nor not-prime.
+                 if(num <= 1){
+                     return false;
+                 }
+                 // check from 2 to (n-1)
+                 for(let i = 2; i < num; i++){
+                     if(num % i === 0){
+                         // number not prime
+                         return false;
+                     }
+                     
+                 }
+                 return true;
+             }
+
+             // To print fibonacci numbers till N.
+
+             // 0,1,1,2,3,5,8,13,21......
+             // next sum = sum of previous two numbers (like - a= 0 , b= 1 , then c = a + b = 1)
+
+             let n = parseInt(prompt('Enter a number'));
+
+             function printFibonaci(n) {
+                 let a = 0;
+                 let b = 1;
+                 let c;
+
+                 console.log(a);// 0
+                 console.log(b);// 1
+
+                 for( let i = 2; i <= n ; i++){
+                     c = a + b;
+                     a = b;
+                     b = c;
+                     console.log(c);
+                 }
+             }
+             printFibonaci(n)
+     </script>
+</body>
+</html>

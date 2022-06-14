@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+      <h1>practice some questions</h1>
+
+      <script>
+              //1) sum of all array in array
+              //2) reverse the array
+              // 3) remove last element from array
+              // 4) add last element to array
+              // 5) remove first 2 element from array
+              // 6) add 3 element at starting of array
+              // 7) remove the middle element from the array
+              // 8)add an element at index 3 in array
+              // 9) select one element from array randomaly
+              // 10) find second bigest number in array
+
+              let arr = [10,20,30,40,50,60]
+             
+               //1) sum of all array in array
+               let sum = 0;
+
+               function sumofallElements(arr){
+                for(let i = 0; i < arr.length; i++){
+                    sum = sum + arr[i];
+                }
+                 arr.push(sum)
+                 console.log(arr);
+               }
+               sumofallElements(arr);
+
+               //2) reverse the array
+
+               function reversearr(arr){
+                  for(let i = (arr.length-1); i >= 0; i--){
+                      console.log(arr[i]);
+               }
+            }
+              reversearr(arr);
+
+               // 3) remove last element from array
+                
+              function removelastElement(arr){
+                arr.pop()
+               console.log(arr);
+              }
+               removelastElement(arr);
+
+              // 4) add last element to array
+
+                function addLastelement(arr){
+                   arr.push('210')
+                   console.log(arr);
+                } 
+                addLastelement(arr)
+
+              // 5) remove first 2 element from array
+
+              function removefirst2element(arr){
+                  arr.shift()
+                  arr.shift()
+                  console.log(arr);
+              }
+              removefirst2element(arr);
+
+              // 6) add 3 element at starting of array
+
+              function addfirst3elemnts(arr){
+                  arr.unshift('7','8','9')
+                  console.log(arr)
+              }
+              addfirst3elemnts(arr);
+
+             // 7) remove the middle element from the array
+
+             l = arr.length
+             middle = parseInt((0+l-1)/2)
+             console.log(middle)
+
+             for(let i = middle; i < l-1; i++){
+                arr[i] = arr[i+1]
+             }
+             arr.pop()
+             console.log(arr);
+
+
+
+              
+
+
+
+      </script>
+</body>
+</html>

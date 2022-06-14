@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h1>array</h1>
+
+      <script>
+
+        // Array : it is non-primitive/Reference datatype used to store multiple values in a single variable.
+        // Example : let a = [10,20,30]
+        //                    0   1  2----- index
+
+        //syntax : let name = [ ]; (generally we used this one)
+        //  OR     let arr =  new Array ();
+
+        // today's We learn:
+        // 1. declare an Array
+        // 2. How to access elements of array
+        // 3. Practiced some questions
+
+        // indexing is starting from 0.
+        // We can store any datatype inside array.
+
+        let a = [10,20,30]
+        console.log(a);
+        console.log(a[0]);
+        console.log(a[1]);
+        console.log(a[2]);
+
+        let b = ['Apple', 20 , 'pear', 40, null,undefined, {name: 'Ankush'}]
+        console.log(b);
+
+        // if we want to find the length of an Array- 
+
+        console.log(a.length)
+        console.log(b.length)
+
+        // How to print Array.
+
+         let c = [10,20,30,]
+         console.log(c.length)
+
+         // print an Array
+         // i<n, i <= (n-1)
+         // i < c.length => i < 3
+         // i <=c.length-1 => i <= 2
+         for(let i = 0; i < c.length ; i++){
+             console.log(c[i]);
+         }
+
+          // To make todo list
+
+          let myDetails = ['Ankush' , 'Agra' , '282006' ,'uttar pradesh' , 'india']
+          console.log(myDetails.length);
+
+          for(let i = 0; i < myDetails.length; i++){
+              console.log(myDetails[i]);
+          }
+
+          // to print last element of an Array
+
+          let d = [10,20,30,40,50,60,70]
+          console.log(d.at(-1) , d[d.length-1]) // last element of an Array
+
+          // How to reverse an Array.
+
+         // let d = [10,20,30,40,50,60,70]
+             console.log(d[d.length-1])
+
+             for(let i = (d.length-1); i >= 0; i--){
+                 console.log(d[i]) 
+                     
+                 
+             }
+          
+
+          // print all the even numbers inside an array
+
+          let arr = [1,2,4,6,8,11,12]
+
+          function printEvennos(arr){
+              for(let i = 0; i < arr.length; i++){
+                  // value of each element in array => arr[i]
+                  if(arr[i] % 2=== 0){
+                      console.log('even' , arr[i]);
+                  }
+              }
+         }
+          printEvennos(arr);
+
+          // print all the odd numbers inside an array
+
+        // let arr = [1,2,4,6,8,11,12]
+
+        //   let num;
+        //   function printOddnos(num){
+        //       for(let i = 0; i < arr.length; i++){
+        //           if( !arr[i] % 2 === 0){
+        //               console.log('Odd' , arr[i]);
+        //           }
+        //       }
+        //  }
+        //   printOddnos(num);
+
+            // print the even index numbers of an array
+
+            let arra = [1,2,4,6,8,11,12]
+
+            function printevenIndexNos(arra){
+                for(let i= 0; i<arra.length;i++){
+                    if(i % 2 === 0){
+                        console.log(arra[i]);
+                    }
+                }
+            }
+            printevenIndexNos(arra);
+
+            // function printevenIndexNos(arra){
+            //     for(let i = 1; i< arra.length; i = i+2){
+            //         console.log(arra[i]);
+            //     }
+            // }
+            // printevenIndexNos(arra);
+
+
+           
+      </script>
+</body>
+</html>

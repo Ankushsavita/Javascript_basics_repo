@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+<body>
+    <h1>Array Methods</h1>
+    <script>
+            // What are Methods ? 
+            // it is the actions which you can perform on an object.
+            // Methods is a property containing function definition.
+            let name = 'Ankush';
+            let arr = ['Ankush',18];
+            console.log(arr[0])
+
+            // Example-1
+            let details = { name: 'Ankush' , age: '18',
+        fullName: function (){
+            console.log('Ankush')
+        }};
+           details.fullName();
+
+           // Example-2
+           let maid = {
+            task1: 'cooking',
+            task2: 'cleanings',
+            calling: function (){
+                console.log('she cooks and cleans');
+            },
+            askHertoshop: function () {
+                console.log('she shops the groceries for home');
+            },
+            ispresent: function (){
+                console.log('Yes')
+            },
+           };
+           maid.ispresent();
+
+           // Example-3
+           let human = {
+            dosewalks: function(){
+                console.log('Yes');
+            },
+            ifTalks: function(){
+                console.log('Yes');
+            },
+            doesfly: function(){
+                console.log('No')
+            },
+           }
+           human.ifTalks();
+
+           // Array Methods:-
+
+           // 1. Array.isArray(value) => if the value is an Array or not.
+
+        //    let num = '2';
+        //    let res = Array.isArray(num);
+        //    console.log(res);    // output => false
+
+           let num = ['2'];
+           let res = Array.isArray(num);
+           console.log(res);   // output => true
+
+           // 2. concat() => This method merges one or more arrays and returns a merged array.
+
+           let first = [1,2,3];
+           let second = [4,5,6];
+           let third = [7,8,9];
+           let merge = first.concat(second, third);
+
+           console.log(first, second, third,  merge);
+
+           // 3. join() => it joins all the elements of any array using a separator(,)and it returns a string.
+
+           const values = [12, 3, 4, 5];
+           const joined = values.join();
+           //const joined = values.join('-'); // output = 12-3-4-5
+           console.log(joined);
+
+           // 4. includes() => an element is present inside an array or not.
+           // it returns boolean values.
+
+           let value = [12,3,4,5];
+           let inc = value.includes(3);
+          // let inc = value.includes(2); //output= false
+           console.log(inc);
+
+           // 5. indexOf() => it returns the first occurance of an element in an array.
+           // it tells you the index position of an element.
+           // if element is not present in array ,it returns -1.
+
+           let sectionA = ['Ankush', 'anshu', 'ram' ,'ram'];
+           let vall = sectionA.indexOf('ram');
+           //let vall = sectionA.indexOf('rama'); // output = -1
+           console.log(vall);
+
+           // 6. lastIndexOf() => it helps to find the last occurance of an element in array.
+           // if element not present , give -1.
+
+           let sectionB = ['Ankush', 'anshu', 'ram' ,'ram','shyam'];
+           let last = sectionB.lastIndexOf('ram');
+           console.log(last);
+
+           // 7. reverse() => it reverse the position of the elements.
+
+           let names1 = [1,2,3];
+           console.log(names1.reverse());
+           console.log(names1);
+
+
+    </script>
+</body>
+</html

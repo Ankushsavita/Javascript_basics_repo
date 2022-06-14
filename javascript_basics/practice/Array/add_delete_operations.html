@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array operations</title>
+</head>
+<body>
+      <h1>Array operations</h1>
+
+      <script>
+             // Todays we learn :
+             // 1. Uses of Array
+             // 2. Adding/Removing Elements from an Array
+
+             // 1. Uses of Array;
+
+             // (i) Queuses : FIFO (First in First Out)
+             // Example : let arr = ['Ankit', 'Ankush','Suman']
+
+             // 2 Operations we have :
+             //(A) Push  : adds an element to the end.
+             //(B) Shift : Gets the element from beginning.
+
+             // (ii) Stackes : LIFO (Last in First Out)
+             // Example : let arr = ['Ankit', 'Ankush','Suman']
+
+             // 2 Operations We have :
+             // (A) Push : adds an element to the end.
+             // (B) Pop  : Remove the element from end.
+
+             // 4 Operations generally Happens :
+             // a) Push : Adding element from end
+             // b) Pop  : Remove element from end.
+             // c) Shift : gets the first element of the array and returns it/Remove element from the start.
+             // d) unshift : adds the element to start.
+
+             // Performance :
+             // 1. Pop/Push operations runs faster
+             // 2. Shift/Unshift operations are slower.
+
+             // Pop : get the last element of array and returns it.
+
+             let fruitbasket = ['Apple', 'Banana', 'Orange', 'Mango']
+              console.log(fruitbasket.pop());
+              console.log(fruitbasket);
+
+            let myDetails = ['Ankush' , 'Agra' , '282006' ,'uttar pradesh' , 'india']
+            // myDetails.pop()
+            console.log( "pop" , myDetails.pop())
+            console.log('at', myDetails.at(-1))
+
+
+          // Push : appending the element to the end of Array.
+
+          fruitbasket.push("pear","Guava")
+          console.log(fruitbasket)
+
+          fruitbasket[fruitbasket.length] = "Grapes"
+          console.log(fruitbasket);
+
+          // Unshift : adding the element from beginning
+
+          fruitbasket.unshift('strawberry', 'pineapple', 'lichi')
+          console.log(fruitbasket)
+
+          // Shift : remove the first element of Array and return
+
+          fruitbasket.shift()
+          console.log(fruitbasket);
+
+
+          // Print the sum of all the elements inside an array.
+         
+          let ip = [2,3,4,6]
+          // output = [2,3,4,6,15]
+
+          // 1. find the sum of ip arr
+         //  2. append the sum value at end of Array
+
+          let sum = 0;
+
+          function addsum(ip) {
+            // found the sum
+            for(let i = 0; i < ip.length; i++){
+                sum = sum + ip[i];
+            }
+            // append the end 
+            ip.push(sum);
+            console.log(ip);
+
+          }
+          addsum(ip);
+
+
+
+
+              
+             
+      </script>
+</body>
+</html>

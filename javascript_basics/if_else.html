@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> if else conditions</title>
+</head>
+<body>
+       <h1>if...else...if conditions</h1>
+
+    
+       <script>
+
+        // if condition
+
+        let a = true;
+
+          if(a){
+              console.log('value is true');
+          }
+
+        let b = 10;
+         
+          if(b == 10){
+              console.log('value equal to 10');
+          }
+
+        let c = 50;
+       
+        if(c > 30){
+            console.log('valur is greater');
+        }
+
+        // if...else condition
+
+        //To check if a given number is greater than 5.
+
+        let num = 2;
+
+          if(num > 5){
+              console.log('num is greater than 5');
+          }else {
+              console.log('num is smaller than 5');
+          }
+
+        //To check if a given number is equal to 5 or not.
+
+        let number = 5;
+
+          if(number > 5){
+              console.log('number is greater than 5');
+          }else if(number === 5){
+              console.log('number is equal to 5');
+          }else{
+              console.log('number is smaller than 5');
+          }
+
+        //To check if user is eligible for voting or not.
+
+        let age = 15;
+
+          if(age > 18){
+              console.log('Eligible for voting');
+          } else if(age === 18){
+              console.log('Congrats! you are eligible for voting');
+          }else {
+              console.log('Not eligible for voting');
+          }
+
+        
+        //Find the maximum number between two numbers.
+
+        //num1 > num2
+        //num2 > num1
+        //num1 === num2
+
+        let num1 = 40;
+        let num2 = 20;
+
+         if(num1 > num2){
+             console.log( 'num1 is greater ' + num1 );
+         }else if(num1 === num2){
+             console.log('equal values');
+         }else{
+             console.log(num2 + ' num2 is greater' )
+         }
+
+        //string interpolation, concatenation
+        // + : addition operator
+        // + : in js its used for joining two value(num or string values).
+
+        let fname = 'ankush';
+        let surname = 'savita';
+
+         console.log(fname + ' ' + surname + ' is my full name');
+         console.log(`my name is ${fname} ${surname}`);
+
+        let degrees = 42;
+
+         console.log(`Todays weather forcast shows ${degrees} degree of temperature`);
+
+
+        //you are given a number, check if the number is negative, positive or zero.
+
+        //if number is negative (num < 0)
+        //if number is positive (num > 0)
+        //number equal to zero  (num = 0)
+
+        let nos = 20;
+
+         if(nos < 0){
+             console.log('num is negative');
+         }else if(nos > 0){
+             console.log('num is positive');
+         }else{
+             console.log('num equal to zero');
+         }
+
+        
+         //To check whether the student has cleared the examination or not.
+
+        let marks = 50;
+        if(marks > 33){
+            console.log('student has cleared the examination');
+        } else if( marks === 33){
+            console.log('Congrats! you have passed the examination');
+        } else {
+            console.log('student has not cleared the examination');
+        }
+
+        // nested if/else condition
+
+        // if(condition){
+           
+        //     if(condition){
+        //      }else{
+        //  }
+        //     }else{
+        //   }
+
+        let n = 10;
+
+        // or it is not 0
+
+        if(n != 0){
+            // n is positive
+            if(n > 0){
+                console.log('positive');
+            }
+            // n is negative
+            else{
+                console.log('negative');
+            }
+        }
+        // either the numb is 0
+        else{
+            console.log('zero')
+        }
+
+
+        //if...else...if condition
+
+        let day = 7;
+
+        if(day == 1){
+            console.log('Today is monday');
+        } else if(day == 2){
+            console.log('Today is tuesday');
+        } else if(day == 3){
+            console.log('Today is wednesday');
+        }else if(day == 4){
+            console.log('Today is thursday');
+        }else if(day == 5){
+            console.log('Today is Friday');
+        }else if(day == 6){
+            console.log('Today is saturday');
+        }else if(day == 7){
+            console.log('Today is sunday');
+        }else {
+            console.log('please enter valid input between 1 to 7');
+        }
+
+        
+
+        
+
+        
+       </script>
+</body>
+</html>
